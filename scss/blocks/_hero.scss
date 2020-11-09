@@ -1,0 +1,87 @@
+
+
+.hero-heading {
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: $heading-color;
+  max-width: 818px;
+  margin: 0 auto 30px auto;
+}
+
+.hero-buttons {
+  max-width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 88px;
+}
+
+.hero-img {
+  display: block;
+  max-width: 1040px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 148px;
+}
+
+.hero-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 142px;
+}
+
+.hero-list__item {
+  width: 325px;
+  margin: 0 20px;
+  text-align: center;
+  &::before {
+    display: block;
+    width: 48px;
+    height: 48px;
+    content: "";
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.effective::before {
+  background-image: url("../img/hero-img-effect.png");
+}
+
+.middle::before {
+  background-image: url("../img/hero-img-poter.png");
+}
+
+.alert::before {
+  background-image: url("../img/hero-img-safety.png");
+}
+
+.hero-list__item-heading {
+  margin: 20px 0 10px 0;
+  color: $heading-color;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.hero-list__item-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}

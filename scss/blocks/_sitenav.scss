@@ -1,0 +1,28 @@
+.header-site__navbar {
+  margin-left: auto;
+
+}
+
+.header-site__list {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 22px;
+}
+
+.header-site__link {
+  text-decoration: none;
+  margin-right: 22px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #72787D;
+  white-space: nowrap;
+  transition: 0.2s;
+  &:hover {
+    color: #036FC7;
+  }
+}
+
+.header-site__link--active {
+  color: #036FC7;
+}
