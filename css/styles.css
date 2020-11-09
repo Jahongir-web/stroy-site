@@ -979,10 +979,13 @@ img {
 .features-list {
   list-style-type: none;
   padding: 0;
-  width: 700px;
+  width: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: auto;
@@ -1045,6 +1048,7 @@ img {
 
 .logistics {
   margin-top: 149px;
+  padding-top: 10px;
   border-radius: 5px;
   background-image: url("../img/logistics-bg.png");
   background-position: center center;
