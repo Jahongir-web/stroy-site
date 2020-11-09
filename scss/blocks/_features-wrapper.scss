@@ -35,19 +35,19 @@
 }
 
 .features-info--nagrad::before {
-  background-image: url(../../img/nagrad.png);
+  background-image: url("../img/nagrad.png");
 }
 
 .features-info--potential::before{
-  background-image: url(../../img/potential.png);
+  background-image: url("../img/potential.png");
 }
 
 .features-info--rink::before {
-  background-image: url(../../img/rink.png);
+  background-image: url("../img/rink.png");
 }
 
 .features-info--safet-razvitiy::before {
-  background-image: url(../../img/safet-razvitiy.png);
+  background-image: url("../img/safet-razvitiy.png");
 }
 
 .features-wrapper__title {
@@ -74,19 +74,19 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
  .features-info--nagrad::before {
-  background-image: url(../../img/nagrad@2x.png);
+  background-image: url("../img/nagrad@2x.png");
 }
 
 .features-info--potential::before{
-  background-image: url(../../img/potential@2x.png);
+  background-image: url("../img/potential@2x.png");
 }
 
 .features-info--rink::before {
-  background-image: url(../../img/rink@2x.png);
+  background-image: url("../img/rink@2x.png");
 }
 
 .features-info--safet-razvitiy::before {
-  background-image: url(../../img/safet-razvitiy@2x.png);
+  background-image: url("../img/safet-razvitiy@2x.png");
 }
 
 }
@@ -97,7 +97,7 @@ only screen and (                min-resolution: 2dppx) {
   padding: 60px 92px 56px 87px;
   background-color: #F6F8F9;
   border-radius: 5px;
-  background-image: url(../img/symbol.svg);
+  background-image: url("../img/symbol.svg");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: 41px 45px;
@@ -122,7 +122,7 @@ only screen and (                min-resolution: 2dppx) {
     width: 48px;
     height: 48px;
     content: "";
-    background-image: url(../img/user-img.svg);
+    background-image: url("../img/user-img.svg");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -238,12 +238,12 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .logistic__title {
-  margin-top: 0;
+  margin-top: 117px;
   margin-bottom: 54px;
-  width: 980px;
-  padding-top: 117px;
-  padding-left: 38px;
-  padding-bottom: 38px;
+  max-width: 980px;
+  padding: 0 38px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 40px;
   line-height: 64px;
   text-align: center;
@@ -258,25 +258,4 @@ only screen and (                min-resolution: 2dppx) {
   padding-bottom: 117px;
   margin-right: auto;
   margin-left: auto;
-}
-
-.logistic__link {
-  display: inline-block;
-  vertical-align: baseline;
-  text-decoration: none;
-  padding: 13px 25px;
-  font-size: 17px;
-  line-height: 24px;
-  border-radius: 5px;
-}
-
-.black {
-  background-color: #212B31;
-  color: #fff;
-}
-
-.white {
-  background-color: #fff;
-  color: #212B31;
-  margin-left: 16px;
 }
