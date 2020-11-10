@@ -806,6 +806,120 @@ img {
   }
 }
 
+.delivery-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.delivery-item::before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin-right: 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.delivery-item__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.delivery-item__heading {
+  margin: 0;
+  margin-bottom: 11px;
+  font-weight: normal;
+  color: #212B31;
+}
+
+.delivery-item__text {
+  color: #72787D;
+}
+
+.delivery-item--beton::before {
+  background-image: url("../img/kamaz.svg");
+}
+
+.delivery-item--utilization::before {
+  background-image: url("../img/utilization.svg");
+}
+
+.delivery-item--mold::before {
+  background-image: url("../img/mold.svg");
+}
+
+.delivery-item--panel::before {
+  background-image: url("../img/panel.svg");
+}
+
+.delivery-item--fasad::before {
+  background-image: url("../img/fasad.svg");
+}
+
+.delivery-item--section::before {
+  background-image: url("../img/section.svg");
+}
+
+.delivery-item--stair::before {
+  background-image: url("../img/stair.svg");
+}
+
+.delivery-item--equipment::before {
+  background-image: url("../img/equipment.svg");
+}
+
+.delivery-item--electrical::before {
+  background-image: url("../img/electrical.svg");
+}
+
+@media only screen and (max-width: 750px) {
+  .delivery-item__wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .delivery-item__heading {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: normal;
+  }
+  .delivery-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .delivery-item::before {
+    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+  }
+  .delivery-item__text {
+    text-align: center;
+  }
+}
+
+.construction {
+  background-color: #212B31;
+  padding: 144px 0 118px 0;
+  background-image: url("../../img/costructor-bg.svg");
+  background-repeat: no-repeat;
+}
+
 .features-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1263,113 +1377,6 @@ img {
 .delivery-section__bottom-text--span {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(55%, white), color-stop(55%, #FFD042), to(#FFD042));
   background-image: linear-gradient(to bottom, white 55%, #FFD042 55%, #FFD042 100%);
-}
-
-.delivery-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.delivery-item::before {
-  content: "";
-  width: 48px;
-  height: 48px;
-  display: block;
-  margin-right: 16px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-}
-
-.delivery-item__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.delivery-item__heading {
-  margin: 0;
-  margin-bottom: 11px;
-  font-weight: normal;
-  color: #212B31;
-}
-
-.delivery-item__text {
-  color: #72787D;
-}
-
-.delivery-item--beton::before {
-  background-image: url("../img/kamaz.svg");
-}
-
-.delivery-item--utilization::before {
-  background-image: url("../img/utilization.svg");
-}
-
-.delivery-item--mold::before {
-  background-image: url("../img/mold.svg");
-}
-
-.delivery-item--panel::before {
-  background-image: url("../img/panel.svg");
-}
-
-.delivery-item--fasad::before {
-  background-image: url("../img/fasad.svg");
-}
-
-.delivery-item--section::before {
-  background-image: url("../img/section.svg");
-}
-
-.delivery-item--stair::before {
-  background-image: url("../img/stair.svg");
-}
-
-.delivery-item--equipment::before {
-  background-image: url("../img/equipment.svg");
-}
-
-.delivery-item--electrical::before {
-  background-image: url("../img/electrical.svg");
-}
-
-@media only screen and (max-width: 750px) {
-  .delivery-item__wrapper {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .delivery-item__heading {
-    margin-bottom: 20px;
-    text-align: center;
-    font-weight: normal;
-  }
-  .delivery-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .delivery-item::before {
-    margin-bottom: 20px;
-    width: 100px;
-    height: 100px;
-  }
-  .delivery-item__text {
-    text-align: center;
-  }
 }
 
 .reliability::before {
