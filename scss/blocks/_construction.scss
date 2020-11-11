@@ -4,61 +4,136 @@
   padding: 144px 0 118px 0;
   background-image: url("../../img/costructor-bg.svg");
   background-repeat: no-repeat;
-
+  background-position: calc(50% + 370px) calc(50% - 100px);
+  background-size: 45%;
+  margin-bottom: 142px;
 }
 
 .construction__content {
+  max-width: 582px;
+  width: 100%;
 
 }
 
 .construction__heading {
-
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 48px;
+  color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
 }
 
 .construction__list {
-
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 50px;
 }
 
 .construction__item {
+  padding-left: 32px;
+  position: relative;
+  &:nth-child(1) {
+    max-width: 461px;
+    width: 100%;
+  }
+  &::before {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    content: "";
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 7px;
+  }
 
 }
 
 .construction__item-heading {
-
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
 }
 
 .construction__item-text {
-
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .construction__buttons {
-
-}
-
-.secondry-btn {
-
-}
-
-.primary-btn {
-
-}
-
-.primary-btn--big {
-
+  max-width: 337px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 127px;
 }
 
 .construction__bottom-list {
-
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .construction__bottom-item {
+  max-width: 340px;
+  width: 100%;
+  text-align: center;
+  &::before {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-bottom: 20px;
+  }
+}
+
+.first::before {
+  background-image: url("../img/master.svg");
+}
+
+.second::before {
+  background-image: url("../img/cons-img.svg");
+}
+
+.three::before {
+  background-image: url("../img/cons-img-last.svg");
 
 }
 
 .construction__bottom-item-heading {
-
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
 }
 
 .construction__bottom-item-text {
-
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 0;
+  margin: 0;
 }
