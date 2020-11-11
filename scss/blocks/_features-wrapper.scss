@@ -179,9 +179,7 @@ only screen and (                min-resolution: 2dppx) {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
-
+  margin: 127px auto 149px auto;
 }
 
 .features-list__item {
@@ -231,12 +229,15 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .logistics {
+  width: 100%;
   margin-top: 149px;
   padding-top: 10px;
   border-radius: 5px;
   background-image: url("../img/logistics-bg.png");
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 150px;
 }
 
 .logistic__title {

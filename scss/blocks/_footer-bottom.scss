@@ -1,0 +1,16 @@
+.footer-site-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -5px;
+  margin-right: -5px;
+  border-top: 1px solid #DADEDF;
+}
+
+.footer-site-bottom__text {
+  padding: 0;
+  margin: 31px 5px 33px 5px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #72787D;
+}
