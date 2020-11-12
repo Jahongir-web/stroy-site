@@ -1,6 +1,7 @@
 
 .delivery-item {
   display: flex;
+  display: none;
 
   &::before{
     content: "";

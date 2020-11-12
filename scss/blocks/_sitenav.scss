@@ -4,6 +4,8 @@
 }
 
 .header-site__list {
+  display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
   margin-left: 22px;
@@ -25,4 +27,88 @@
 
 .header-site__link--active {
   color: #036FC7;
+}
+
+.header-site__toggler-btn {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 0;
+  background-image: url("../img/gamburg.svg");
+  // background-image: url("../img/close.svg");
+  background-repeat: no-repeat;
+  background-size: 80% 60%;
+  background-position: center;
+  background-color: #72787D;
+  border: 0;
+  margin-left: auto;
+  z-index: 5;
+  flex-shrink: 0;
+}
+
+@media only screen and (max-width: 854px) {
+
+  .header-site__list {
+    margin-left: 10px;
+  }
+
+  .header-site__link {
+    margin-right: 5px;
+    font-size: 15px;
+  }
+
+}
+
+@media only screen and (max-width: 775px) {
+  .header-site__logo-img {
+    width: 236px;
+  }
+
+  .header-site__navbar {
+    display: none;
+  }
+
+  .header-site {
+    position: relative;
+
+  }
+
+  .header-site__toggler-btn {
+    display: block;
+  }
+
+  .header-site-open .header-site__navbar {
+    display: block;
+  }
+
+  .header-site__list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    top: -3px;
+    right: -10px;
+    padding: 10px;
+    padding-bottom: 60px;
+    background-color: #fff;
+    // border-left: 1px solid #000;
+    border-radius: 30px;
+    background-image: linear-gradient(left, rgb(240, 240, 240), #fff);
+
+  }
+
+
+  .primary-btn {
+    display: none;
+    position: absolute;
+    right: 80px;
+    top: 200px;
+
+  }
+
+  .header-site-open .primary-btn {
+    display: block;
+  }
+
 }

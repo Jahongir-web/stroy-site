@@ -8,20 +8,32 @@
 </head>
 <body>
   <!-- HEADER-SITE -->
-  <header class="header-site">
+  <header class="header-site header-site-open container">
     <a class="header-site__logo" href="index.html">
-      <img class="header-site__logo-img" src="./img/logo.svg" alt="logo">
+      <img class="header-site__logo-img" src="./img/logo.svg" alt="logo" width="236" height="44">
     </a>
 
     <nav class="header-site__navbar">
       <ul class="header-site__list">
         <li class="header-site__item">
           <a href="#" class="header-site__link header-site__link--active">Главная</a>
+        </li>
+        <li class="header-site__item">
           <a href="#" class="header-site__link">О нас</a>
+        </li>
+        <li class="header-site__item">
           <a href="#" class="header-site__link">Продукция</a>
+        </li>
+        <li class="header-site__item">
           <a href="#" class="header-site__link">Процесс</a>
+        </li>
+        <li class="header-site__item">
           <a href="#" class="header-site__link">Надёжность</a>
+        </li>
+        <li class="header-site__item">
           <a href="#" class="header-site__link">Клиенты</a>
+        </li>
+        <li class="header-site__item">
           <a href="#" class="header-site__link">Связаться с нами</a>
         </li>
       </ul>
@@ -29,6 +41,7 @@
     </nav>
 
     <button class="primary-btn">Заказать демо</button>
+    <button class="header-site__toggler-btn"></button>
 
   </header>
 
@@ -496,7 +509,19 @@
           </footer>
 
 
+          <script>
 
+            var elBtnToggler = document.querySelector('.header-site__toggler-btn');
+            var elNav = document.querySelector('.header-site');
+
+
+            elBtnToggler.addEventListener('click', function () {
+              elNav.classList.toggle('header-site-open');
+            });
+
+
+
+          </script>
 
         </body>
         </html>

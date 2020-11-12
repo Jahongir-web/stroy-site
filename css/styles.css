@@ -495,6 +495,11 @@ img {
 }
 
 .header-site__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
   margin-left: 22px;
@@ -520,6 +525,84 @@ img {
   color: #036FC7;
 }
 
+.header-site__toggler-btn {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 0;
+  background-image: url("../img/gamburg.svg");
+  background-repeat: no-repeat;
+  background-size: 80% 60%;
+  background-position: center;
+  background-color: #72787D;
+  border: 0;
+  margin-left: auto;
+  z-index: 5;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+@media only screen and (max-width: 854px) {
+  .header-site__list {
+    margin-left: 10px;
+  }
+  .header-site__link {
+    margin-right: 5px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .header-site__logo-img {
+    width: 236px;
+  }
+  .header-site__navbar {
+    display: none;
+  }
+  .header-site {
+    position: relative;
+  }
+  .header-site__toggler-btn {
+    display: block;
+  }
+  .header-site-open .header-site__navbar {
+    display: block;
+  }
+  .header-site__list {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 250px;
+    top: -3px;
+    right: -10px;
+    padding: 10px;
+    padding-bottom: 60px;
+    background-color: #fff;
+    border-radius: 30px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#f0f0f0), to(#fff));
+    background-image: linear-gradient(left, #f0f0f0, #fff);
+  }
+  .primary-btn {
+    display: none;
+    position: absolute;
+    right: 80px;
+    top: 200px;
+  }
+  .header-site-open .primary-btn {
+    display: block;
+  }
+}
+
+.main-content {
+  display: none;
+}
+
 .hero-heading {
   font-weight: normal;
   font-size: 48px;
@@ -528,6 +611,7 @@ img {
   color: #212B31;
   max-width: 818px;
   margin: 0 auto 30px auto;
+  display: none;
 }
 
 .hero-buttons {
@@ -619,6 +703,7 @@ img {
 .about {
   padding: 0px;
   margin-bottom: 143px;
+  display: none;
 }
 
 .about__heading {
@@ -701,6 +786,7 @@ img {
           align-items: center;
   padding-left: 0px;
   padding-right: 0px;
+  display: none;
 }
 
 .about-info::after {
@@ -814,6 +900,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: none;
 }
 
 .delivery-item::before {
@@ -925,6 +1012,7 @@ img {
   background-position: calc(50% + 370px) calc(50% - 100px);
   background-size: 45%;
   margin-bottom: 142px;
+  display: none;
 }
 
 .construction__content {
@@ -1190,6 +1278,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: none;
 }
 
 .features-wrapper__list {
@@ -1589,6 +1678,7 @@ img {
 .delivery-section {
   padding: 0;
   padding-bottom: 65px;
+  display: none;
 }
 
 .delivery-section__heading {
@@ -1806,6 +1896,7 @@ img {
           justify-content: space-between;
   margin-left: -5px;
   margin-right: -5px;
+  display: none;
 }
 
 .footer-site-top__first-box {
@@ -1906,6 +1997,7 @@ img {
   margin-left: -5px;
   margin-right: -5px;
   border-top: 1px solid #DADEDF;
+  display: none;
 }
 
 .footer-site-bottom__text {
